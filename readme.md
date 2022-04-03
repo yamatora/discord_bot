@@ -41,10 +41,3 @@ ALLOWED_CHANNELS = [959771234567849104, 12345678567849104]
 # 項目追加
 ## 自動登録項目
 `bot.py`>`loop_subscribe`関数内にて`set_regular_event`関数を使用して取得した配列を`self.queue`に追加
-
-## ロールおよびチャンネルのリンク
-```example
-roll:       <@&{ID_ROLL}>
-channel:    <#{ID_CHANNEL}}>
-```
-参考: [DiscordのID直打ちでのリンクの書き方と文字装飾 - Qiita](https://qiita.com/Mijinko/items/df3d2e1f90dbed5a4019)
