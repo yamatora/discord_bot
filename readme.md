@@ -1,9 +1,9 @@
 # setup
-## Require
-- [config.iniを同階層に配置](#configini)
-
-## Optional
-- [登録条件の追加](#項目追加)
+- Require
+  - [config.iniを同階層に配置](#configini)
+  - [デプロイ](#デプロイ)
+- Optional
+  - [登録条件の追加](#項目追加)
 
 # config.ini
 ```dummy.ini
@@ -33,6 +33,10 @@ ALLOWED_CHANNELS = [959771234567849104, 12345678567849104]
 
 ## ALLOWED_CHANNELS
 [ID_EVERYONE](#id_everyone)と同様の手順にてIDを取得し、配列として設定
+
+# デプロイ
+下記記事の`Heroku`へのデプロイ部を参考  
+参考: [Pythonで実用Discord Bot(discordpy解説)](https://qiita.com/1ntegrale9/items/9d570ef8175cf178468f#bot%E3%82%9224%E6%99%82%E9%96%93365%E6%97%A5%E7%A8%BC%E5%83%8D%E3%81%95%E3%81%9B%E3%82%8B)
 
 # 項目追加
 ## 自動登録項目
