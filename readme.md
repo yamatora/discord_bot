@@ -38,6 +38,15 @@ ALLOWED_CHANNELS = [959771234567849104, 12345678567849104]
 下記記事の`Heroku`へのデプロイ部を参考  
 参考: [Pythonで実用Discord Bot(discordpy解説)](https://qiita.com/1ntegrale9/items/9d570ef8175cf178468f#bot%E3%82%9224%E6%99%82%E9%96%93365%E6%97%A5%E7%A8%BC%E5%83%8D%E3%81%95%E3%81%9B%E3%82%8B)
 
+## ループ処理が動作しない問題
+[30分スリープ問題](https://note.com/hidekiikeda/n/nf9c9db122572)  
+[Heroku無料枠の限界に挑む](https://qiita.com/Oyuki123/items/855aa97e5ce27e44079f)  
+下記にて解決  
+
+- アカウント認証(クレジットカード登録)
+- `Heroku Scheduler`アドオン追加
+- 10分間隔にて`curl https://[app_name].herokuapp.com/`等サーバに対してアクセスを行うコマンドを実行
+
 # 項目追加
 ## 自動登録項目
 `bot.py`>`loop_subscribe`関数内にて`set_regular_event`関数を使用して取得した配列を`self.queue`に追加
