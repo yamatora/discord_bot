@@ -1,3 +1,7 @@
+2022/05/06  更新していません
+
+---
+
 # setup
 - Require
   - [config.iniを同階層に配置](#configini)
